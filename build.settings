@@ -1,0 +1,32 @@
+-- Supported values for orientation:
+-- portrait, portraitUpsideDown, landscapeLeft, landscapeRight
+
+settings = {
+
+	orientation = {
+		default = "portrait",
+		supported = { "portrait", }
+	},
+
+	iphone = {
+		plist = {
+		  CFBundleShortVersionString = "1.1",
+			NSCalendarsUsageDescription = "Testing",
+      NSPhotoLibraryUsageDescription = "Testing",
+      NSCameraUsageDescription = "Testing",
+		}
+	},
+
+	window = {
+	  resizable = true,
+	},
+
+	--[[
+	-- Android permissions
+
+	androidPermissions = {
+  		"android.permission.INTERNET",
+  	},
+
+	]]--
+}
